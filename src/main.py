@@ -5,7 +5,7 @@ from utils import create_spark_session, read_csv_file, convert_excel_to_csv, wri
 
 
 def main():
-    spark = create_spark_session("My PySpark App")
+    spark = create_spark_session("Practical_Test")
 
     input_file_path = os.path.join("data", "source", "Online Retail.xlsx")
     csv_converted_file_path = os.path.join("data", "csv_converted", "Online Retail.csv")
