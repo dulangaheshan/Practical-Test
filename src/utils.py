@@ -1,12 +1,13 @@
 # Author: Dulanga Heshan
 
 from pandas import DataFrame
-from pyspark.sql import SparkSession
 import pandas as pd
 import logging
+from pyspark.sql import SparkSession
 
 
-def create_spark_session(app_name: str):
+
+def create_spark_session(app_name: str, conf):
     """
     create a spark session
 
@@ -14,7 +15,7 @@ def create_spark_session(app_name: str):
     :return: spark session
     """
     try:
-        return SparkSession.builder.appName(app_name).getOrCreate()
+        return SparkSession.builder.appName(conf.get('app_name')).getOrCreate()
     except Exception as e:
         logging.error("Error while creating SparkSession:", str(e))
 

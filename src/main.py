@@ -1,19 +1,20 @@
 # Author: Dulanga Heshan
-
 import os
-from pyspark.sql.functions import col, avg
 import logging
-from utils import create_spark_session, read_csv_file, convert_excel_to_csv, write_partitioned_csv, write_csv_file
+from utils import create_spark_session, read_csv_file
 from tasks import task1, task2, task3
+import configparser
 
-logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s', level=logging.INFO, filename='logs'
-                                                                                                   '/practical_test.log')
+env = os.getenv('ENVIRONMENT', default='local')
+config = configparser.ConfigParser()
+config.read('config.ini')
+conf = config[env]
 
+logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s', level=logging.INFO, filename=conf.get("log_file_path"))
 
 def main():
     logging.info('Start The Spark Session')
-    spark = create_spark_session("Practical_Test")
-
+    spark = create_spark_session("Practical_Test", conf)
     input_file_path = os.path.join("data", "source", "Online Retail.xlsx")
     csv_converted_file_path = os.path.join("data", "csv_converted", "Online Retail.csv")
     partitioned_file_path = os.path.join("data", "partitioned", "Online Retail.csv")

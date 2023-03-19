@@ -15,3 +15,48 @@
 2023-03-19 00:57:56,232 INFO     Start task3 - sales records where country is United Kingdom
 2023-03-19 00:57:56,305 INFO     Writing csv:-data/output/top_10_on_dec_UK_.csv
 2023-03-19 00:57:57,102 INFO     Finished The Spark Session
+2023-03-19 03:41:13,455 INFO     Start The Spark Session
+2023-03-19 03:41:18,678 INFO     Processing Task 1
+2023-03-19 03:41:18,678 INFO     Start task1 read file and converted to csv partitions
+2023-03-19 03:41:18,678 INFO     Processing Task 1 The Spark Session
+2023-03-19 03:41:18,678 INFO     convert excel file to csv:-data/source/Online Retail.xlsx
+2023-03-19 03:41:53,579 INFO     reading csv:-data/csv_converted/Online Retail.csv
+2023-03-19 03:41:53,610 INFO     Writing partitioned csv:-data/partitioned/Online Retail.csv
+2023-03-19 03:41:53,610 INFO     read partitioned data set and cache
+2023-03-19 03:41:53,610 INFO     reading csv:-data/partitioned/Online Retail.csv
+2023-03-19 12:46:28,554 INFO     Start The Spark Session
+2023-03-19 12:48:30,050 INFO     Start The Spark Session
+2023-03-19 13:04:23,501 INFO     Start The Spark Session
+2023-03-19 13:36:50,786 INFO     Start The Spark Session
+2023-03-19 13:47:09,571 INFO     Start The Spark Session
+2023-03-19 13:47:11,705 INFO     Processing Task 1
+2023-03-19 13:47:11,705 INFO     Start task1 read file and converted to csv partitions
+2023-03-19 13:47:11,705 INFO     Processing Task 1 The Spark Session
+2023-03-19 13:47:11,705 INFO     convert excel file to csv:-data/source/Online Retail.xlsx
+2023-03-19 13:47:46,833 INFO     reading csv:-data/csv_converted/Online Retail.csv
+2023-03-19 13:47:49,643 INFO     Writing partitioned csv:-data/partitioned/Online Retail.csv
+2023-03-19 13:47:52,769 INFO     read partitioned data set and cache
+2023-03-19 13:47:52,769 INFO     reading csv:-data/partitioned/Online Retail.csv
+2023-03-19 13:47:55,582 INFO     Processing Task 2
+2023-03-19 13:47:55,583 INFO     Start task2 - Calculate average subtotal (sales value) per country
+2023-03-19 13:47:55,630 INFO     Writing csv:-data/output/avg_sales.csv
+2023-03-19 13:47:59,659 INFO     Processing Task 3
+2023-03-19 13:47:59,659 INFO     Start task3 - sales records where country is United Kingdom
+2023-03-19 13:47:59,715 INFO     Writing csv:-data/output/top_10_on_dec_UK_.csv
+2023-03-19 13:48:00,588 INFO     Finished The Spark Session
+2023-03-19 15:00:08,674 INFO     Start The Spark Session
+2023-03-19 15:00:25,160 INFO     Processing Task 1
+2023-03-19 15:00:25,160 INFO     Start task1 read file and converted to csv partitions
+2023-03-19 15:00:25,160 INFO     Processing Task 1 The Spark Session
+2023-03-19 15:00:25,160 INFO     convert excel file to csv:-data/source/Online Retail.xlsx
+2023-03-19 15:01:34,476 INFO     reading csv:-data/csv_converted/Online Retail.csv
+2023-03-19 15:01:38,403 INFO     Writing partitioned csv:-data/partitioned/Online Retail.csv
+2023-03-19 15:01:42,276 INFO     read partitioned data set and cache
+2023-03-19 15:01:42,276 INFO     reading csv:-data/partitioned/Online Retail.csv
+2023-03-19 15:01:48,220 INFO     Processing Task 2
+2023-03-19 15:01:48,221 INFO     Start task2 - Calculate average subtotal (sales value) per country
+2023-03-19 15:01:48,328 INFO     Writing csv:-data/output/avg_sales.csv
+2023-03-19 15:01:57,936 INFO     Processing Task 3
+2023-03-19 15:01:57,936 INFO     Start task3 - sales records where country is United Kingdom
+2023-03-19 15:01:58,042 INFO     Writing csv:-data/output/top_10_on_dec_UK_.csv
+2023-03-19 15:01:59,181 INFO     Finished The Spark Session
